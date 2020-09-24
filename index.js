@@ -1,8 +1,8 @@
 const { ApolloServer, ApolloError } = require("apollo-server");
 const typeDefs = require('./schema')
 const resolvers = require('./resolvers')
-const ProjectAPI = require("./mocking/datasourcess/project");
-const UserAPI = require("./mocking/datasourcess/user");
+const ProjectAPI = require("./datasourcess/project");
+const UserAPI = require("./datasourcess/user");
 const faker = require('faker')
 const mocks = {
 

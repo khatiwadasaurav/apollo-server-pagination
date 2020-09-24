@@ -7,13 +7,12 @@ In this activity, we'll go through the process of setting up schema mocks using 
 1. Clone the Repo
 
 ```
-git clone https://github.com/graphqlworkshop/mocking
+git clone https://github.com/khatiwadasaurav/apollo-server-pagination.git
 ```
 
 2. Install Dependencies
 
 ```
-cd mocking
 npm i
 ```
 
