@@ -1,16 +1,19 @@
-const { ApolloServer, ApolloError } = require("apollo-server");
-const typeDefs = require('./schema')
-const resolvers = require('./resolvers')
-const ProjectAPI = require("./datasourcess/project");
-const UserAPI = require("./datasourcess/user");
-const faker = require('faker')
+import { ApolloServer, ApolloError } from "apollo-server"
+import typeDefs from './schema'
+import resolvers from './resolvers'
+import ProjectAPI from './datasourcess/project'
+import UserAPI from "./datasourcess/user";
+import faker from 'faker'
+
 const mocks = {
 
   User: () => ({
     name: () => faker.random.arrayElement(UserAPI.getAllUsers()),
     profileImageUrl: () => faker.random.arrayElement(UserAPI.getAllUsers()),
     username: () => faker.name.firstName() + faker.random.number([0, 2])
-
+  }),
+  ProjectEdge: () => ({
+    role: () => faker.random.word()
   }),
   ID: () => faker.random.uuid(),
 }

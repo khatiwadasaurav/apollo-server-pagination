@@ -1,4 +1,4 @@
-const { paginateResults } = require('./utils');
+import { paginateResults } from './utils';
 
 module.exports = {
     Query: {

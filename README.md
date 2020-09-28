@@ -23,3 +23,20 @@ npm start
 ```
 
 4. Open `localhost:4000`
+
+
+## initial schema architecture
+
+query {
+  projects(pageSize: 10) {
+    cursor
+    hasMore
+    projects {
+      id
+      name
+      code
+      color
+      address
+    }
+  }
+}

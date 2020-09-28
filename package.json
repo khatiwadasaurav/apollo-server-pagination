@@ -4,7 +4,7 @@
   "description": "Learning more about schema mocking with Apollo Server",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon --exec babel-node index.js"
   },
   "keywords": [
     "graphql",
@@ -15,11 +15,15 @@
   "license": "MIT",
   "dependencies": {
     "apollo-server": "^2.9.4",
-    "faker": "^4.1.0",
-    "graphql": "^14.5.8",
-    "nodemon": "^1.19.3"
+    "graphql": "^14.5.8"
   },
   "devDependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/node": "^7.10.5",
+    "@babel/preset-env": "^7.11.5",
+    "faker": "^4.1.0",
+    "nodemon": "^1.19.3",
     "apollo-datasource-rest": "^0.9.4"
   }
 }

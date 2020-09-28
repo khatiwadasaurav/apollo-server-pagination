@@ -1,6 +1,6 @@
-const { RESTDataSource } = require('apollo-datasource-rest');
-const faker = require('faker')
-const userDatas = require('../data/users.json');
+import { RESTDataSource } from 'apollo-datasource-rest';
+import faker from 'faker'
+import userDatas from '../data/users.json';
 class UserAPI extends RESTDataSource {
     constructor() {
         super()

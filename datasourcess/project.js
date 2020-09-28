@@ -1,5 +1,5 @@
-const { RESTDataSource } = require('apollo-datasource-rest');
-const projectData = require('../data/projects.json')
+import { RESTDataSource } from 'apollo-datasource-rest';
+import projectData from '../data/projects.json'
 class ProjectAPI extends RESTDataSource {
     constructor() {
         super();
