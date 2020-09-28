@@ -23,7 +23,7 @@ module.exports = {
             };
         },
         project: (_, { id }, { dataSources }) =>
-            dataSources.quakeAPI.getProjectById({ projectId: id }),
+            dataSources.projectAPI.getProjectById({ projectId: id }),
         users: async (_, __, { dataSources }) => await dataSources.userAPI.getAllUsers(),
         allUsers: async (_, { pageSize = 20, after }, { dataSources }) => {
             const allUsers = await dataSources.userAPI.getAllUsers()
